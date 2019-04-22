@@ -29,7 +29,7 @@ def show_movies():
 
 
 # Defino el endpoint que recomiendo peliculas
-@app.route("/recommend_movie/<name>")
+@app.route("/recommend_movies/<name>")
 def find_similar(name, weights = movie_weights, index_name = 'movie', n = 11, least = False):
     
     # Select index and reverse index
